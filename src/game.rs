@@ -63,6 +63,7 @@ impl Player {
     pub fn is_dead(&self) -> bool {
         self.count_cards() == 0
     }
+    #[allow(unused)]
     pub fn is_winner(&self) -> bool {
         self.count_cards() == 52
     }
@@ -178,6 +179,7 @@ impl Game {
             rng,
         }
     }
+    #[allow(unused)]
     pub fn short_print(&self) -> String {
         format!(
             "Game{{ round {} [{}:{} cards, {} total, valued {}], [{}:{} cards, {} total, valued {}] }}",
